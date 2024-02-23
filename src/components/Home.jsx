@@ -248,7 +248,7 @@ const Home = () => {
   
   <div className="section">
     <h2>Resumen</h2>
-    <p>En resumen, el modelo de machine learning utiliza una variedad de datos financieros para identificar transacciones fraudulentas, lo que permite a las instituciones financieras tomar medidas proactivas para protegerse contra el fraude y garantizar la seguridad de sus clientes.</p>
+    <p>El modelo de machine learning utiliza una variedad de datos financieros para identificar transacciones fraudulentas, lo que permite a las instituciones financieras tomar medidas proactivas para protegerse contra el fraude y garantizar la seguridad de sus clientes.</p>
     <p>Al analizar la interrelación entre los conjuntos de datos e identificar posibles patrones y relaciones, podemos obtener información valiosa que puede ser utilizada para desarrollar un modelo de machine learning efectivo para la detección de transacciones fraudulentas. Cada conjunto de datos ofrece una perspectiva única que, cuando se combina, puede proporcionar una comprensión más completa y profunda del fenómeno del fraude financiero.</p>
       
   </div>
