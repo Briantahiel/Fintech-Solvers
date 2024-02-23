@@ -25,7 +25,7 @@ const Portada = () => {
       <div className="spacer s2"></div>
       <div id="trigger1" className="spacer s0"></div>
       <div id="reveal1" className="box2 blue">
-            <h1><span className='title'>FINTECH</span><br/><span className='underline'>SOLVERS.</span></h1>
+            <div className='title-container'><h1><span className='title'>FINTECH</span><br/><span className='underline'>SOLVERS.</span></h1></div>
             <div className='paragraph'><p>Bienvenidos, este proyecto forma parte de la simulación de No Country.</p>
             </div>
       </div>

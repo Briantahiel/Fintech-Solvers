@@ -97,8 +97,53 @@ const Home = () => {
             <div className='home-dashboard' >
             <img src={dashboard} alt='dashboard'/>
         </div>
-     
-        
+        <div className='integrantes' style={{height: '60px'}}></div>
+        <h1 className='titles'>Integrantes</h1>
+        <div id="carouselExampleFade" className="carousel slide carousel-fade">
+  <div className="carousel-inner">
+    <div className="carousel-item active">
+    <div className="d-block w-25"> 
+        <div>
+            <img src={banner}  alt="..." />
+            Esta imagen debe ser un simple icon con el rostro de la persona
+        </div>
+        <div>
+            <p>Un texto descriptivo de la persona.</p>
+        </div>
+    </div>    
+    </div>
+    <div className="carousel-item active">
+    <div className="d-block w-25"> 
+        <div>
+            <img src={banner}  alt="..." />
+            Esta imagen debe ser un simple icon con el rostro de la persona
+        </div>
+        <div>
+            <p>Un texto descriptivo de la persona.</p>
+        </div>
+    </div>    
+    </div>
+    <div className="carousel-item active">
+    <div className="d-block s-25"> 
+        <div>
+            <img src={dashboard}  alt="..." />
+            Esta imagen debe ser un simple icon con el rostro de la persona
+        </div>
+        <div>
+            <p>Un texto descriptivo de la persona.</p>
+        </div>
+    </div>    
+    </div>
+  </div>
+  <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span className="visually-hidden">Previous</span>
+  </button>
+  <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+    <span className="visually-hidden">Next</span>
+  </button>
+</div>
     </>
   )
 }

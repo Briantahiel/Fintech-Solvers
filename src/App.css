@@ -87,6 +87,9 @@ p {
   height: auto;
 }
 
+/*Carousel*/
+
+
 /*Portada*/
 .main-title {
   max-width: 1200px;
@@ -97,17 +100,20 @@ p {
 }
 .box2 {
   height: 100vh;
-  margin: 10px;
+  margin: auto;
   position: relative;
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   color: rgb(65, 65, 65);
   font-family: "Roboto Condensed", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
-
+.title-container {
+  position: relative;
+  top: 20%;
+}
 .underline {
   color: #4697bd;
   font-style: normal;
