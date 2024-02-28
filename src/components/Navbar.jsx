@@ -79,7 +79,7 @@ function Navbar() {
         <Container>
           <Toolbar disableGutters>
             <Icon style={{ width: 60, height: 60 }}>
-              <img src="/logo.png" alt="Logo de la empresa" width="100%" />
+              <img src="./logo.png" alt="Logo de la empresa" width="100%" />
             </Icon>
             <Box
               sx={{
