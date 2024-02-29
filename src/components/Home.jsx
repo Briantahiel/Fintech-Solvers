@@ -3,7 +3,6 @@ import ScrollMagic from "scrollmagic";
 import "../App.css";
 import Navbar from "./Navbar";
 import Portada from "./Portada";
-import banner from "../assets/background.jpg";
 import dashboard from "../assets/dashboard.jpg";
 import logo from "../assets/github.png";
 import brian from "../assets/Brian.jpg";
@@ -12,6 +11,7 @@ import veronica from "../assets/Veronica.jpg";
 import mayra from "../assets/Mayra.jpg";
 import marcos from "../assets/Marcos.png";
 import diego from "../assets/Diego.jpg";
+import banner from "../assets/banner.jpg"
 import { Carousel } from 'bootstrap'; 
 
 
@@ -49,10 +49,10 @@ const Home = () => {
 
   return (
     <>
+      <div id="inicio" style={{height: '60px'}}></div>
       <Navbar />
-      <div id="inicio">
-        <Portada />
-      </div>
+      <Portada />
+      <div style={{backgroundColor: 'white'}}>
       <div id="introducción" style={{ height: "60px" }}></div>
       <div className="home-content">
         <div className="home-desarrollo">
@@ -90,10 +90,10 @@ const Home = () => {
         </div>
       </div>
       <div id="desarrollo" style={{ height: "70px" }}></div>
-      <h1 className="titles">Desarrollo</h1>
-      <div className="borde-inferior"></div>
+      <div className="titles-container">
+        <h1 className="titles borde-inferior">Desarrollo</h1>
+      </div>
       <div className="home-desarrollo-descripcion"></div>
-
       <div className="home-container" id="reveal-elements">
         <div className="box1 digit item">
           <div className="box-content">
@@ -144,10 +144,10 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="analisis" id="análisis" style={{ height: "70px" }}></div>
-      <h1 className="titles">Analizando transacciones fraudulentas</h1>
-      <div className="borde-inferior"></div>
-
+      <div className="analisis" id="análisis" style={{ height: "70px", backgroundColor: 'white' }}></div>
+      <div className="titles-container">
+        <h1 className="titles borde-inferior">Analizando transacciones fraudulentas</h1>
+      </div>
       <div className="container">
         <div className="container-background">
           <main className="main-content">
@@ -220,7 +220,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="container">
+      {/* <div className="container">
         <div className="reveal">
           <div id="reveal-elements" className="reveal-container">
             <div className="digit">
@@ -235,16 +235,16 @@ const Home = () => {
             </div>
           </div>
         </div>
+      </div> */}
+      <div id="dashboard" style={{ height: "60px", backgroundColor: 'white' }}></div>
+      <div className="titles-container">
+        <h1 className="titles borde-inferior">Dashboard</h1>
       </div>
-
-      <div id="dashboard" style={{ height: "60px" }}></div>
-      <h1 className="titles">Dashboard</h1>
-      <div className="borde-inferior"></div>
       <div className="home-dashboard">
         <img src={dashboard} alt="dashboard" />
       </div>
 
-      <div id="modelo ml" style={{ height: "60px" }}></div>
+      <div id="modelo ml" style={{ height: "60px", backgroundColor: 'white' }}></div>
       <div className="container">
         <div className="section">
           <h1 className="titles">
@@ -448,7 +448,7 @@ const Home = () => {
       <div
         className="integrantes"
         id="integrantes"
-        style={{ height: '60px', marginBottom: '180px'}}
+        style={{ height: '60px' }}
       ></div>
     
       <div
@@ -590,6 +590,7 @@ const Home = () => {
           <span>Copyright &copy; 2024 Fintech Solvers</span>
         </div>
       </footer>
+      </div>
     </>
   );
 };

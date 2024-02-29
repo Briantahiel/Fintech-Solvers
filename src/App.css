@@ -12,6 +12,7 @@
 body {
   overflow-x: hidden;
 }
+
 .title-container :nth-child(2){
   font-weight: 100 !important;
 }
@@ -30,22 +31,38 @@ h6 {
 p {
   font-weight: 300;
   letter-spacing: 1.2px;
-  margin: 3px;
+  margin: 0;
 }
-.titles {
+
+.titles-container {
+  background-color: white;
   text-align: center;
-  margin-bottom: 20px;
+
 }
-/* .title {
+#desarrollo {
+  background-color: white;
+}
+.title {
   color: #4697bd !important;
-} */
+}
 .paragraph {
   width: 100%;
 }
-.borde-inferior {
-  margin: auto;
-  border-bottom: 1px solid #333333;
+
+.borde-inferior::after {
+  content: ''; 
+  position: absolute; 
+  bottom: 0; 
+  left: 50%;
+  transform: translateX(-50%); 
   width: 5%;
+  height: 1px;
+  background-color: #333333;
+}
+
+.borde-inferior {
+  display: inline-block;
+  position: relative; 
 }
 /*Navbar*/
 
@@ -67,7 +84,7 @@ p {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: rgb(236, 229, 124); 
+  background-color: rgb(16, 23, 68); 
   transition: width 0.3s ease-in-out; 
 }
 
@@ -79,40 +96,44 @@ p {
   width: 100%; 
   transition: none;
 }
-
+/* #dashboard {
+  position: relative;
+  top: -10px;
+} */
 
 /*HOME*/
 .home-container {
   display: flex;
   flex-wrap: wrap;
   max-width: 1200px;
-  margin: 0 auto;
-  background-color: whitesmoke;
-}
+  margin: auto;
+  background-color: white;
+ }
+ 
 .box1 {
   display: flex;
   justify-content: space-around;
   margin: auto;
 }
 .item {
-  height: 280px !important;
+  height: 220px !important;
 }
 .box-content {
-  max-width: 460px;
+  max-width: 520px;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;  
+  background-color: white;
 }
 
-/* 
-.item {
-  flex: 1;
-  padding: 20px;
-  box-sizing: border-box;
-} */
+#introducción {
+  margin-top: 560px;
+}
+
 .home-content {
   display: flex;
+  background-color: white;
 }
 
 .home-desarrollo,
@@ -120,7 +141,6 @@ p {
   flex-basis: 50%;
   padding: 20px;
   box-sizing: border-box;
-  
 }
 
 .home-desarrollo-descripcion {
@@ -130,15 +150,23 @@ p {
 .home-desarrollo-descripcion p:nth-child(1){
   text-align: center;
   margin: 30px auto;
-
 }
 .home-img img {
   max-width: 100%;
   height: auto;
 }
 
+
 /*Carousel*/
 
+#integrantes {
+  background-color: white;
+  min-height: 240px;
+}
+.carousel {
+  background-color: white;
+  padding-bottom: 100px;
+}
 .carousel-inner {
   max-width: 1200px;
   margin: auto;
@@ -153,13 +181,22 @@ p {
   width: 120px !important;
   height: 120px;
 }
+.carousel-control-next i, .carousel-control-prev i{
+  margin-bottom: 150px !important;
+}
 /*Portada*/
 .main-title {
   max-width: 1200px;
-  margin: auto;
   display: flex;
+  margin: -40px auto;
   justify-content: center;
   text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  z-index: -1; 
 }
 
 .box2 {
@@ -174,7 +211,6 @@ p {
   font-optical-sizing: auto;
   font-style: normal;
   padding: 10px;
-
 }
 .background-container {
   background-image: url('./assets/portada1.png');
@@ -195,9 +231,11 @@ p {
 }
 
 .underline {
-  /* color: #4697bd; */
+  /* color: #4697bd !important; */
   font-style: italic !important;
+  /* color: #cd8170 !important; */
 }
+
 .box2 h1 {
   font-weight: 800;
   font-size: 5.6rem;
@@ -206,9 +244,9 @@ p {
 .title {
     color: #333333;
 }
-/*.box2 .title {
+/* .box2 .title {
   color: #cd8170;
-}*/
+} */
 .box2 p{
   font-weight: 350;
   font-size: 1.1rem;
@@ -246,16 +284,18 @@ p {
   .home-content {
     flex-direction: column;
   }
-  .left-image,
+  /* .left-image,
   .right-image {
 
   display: none;
 }
   .container .reveal {
     display: none;
+  } */
+  .integrantes {
+    margin-bottom: 0px !important;
   }
 }
-
 
 @media screen and (max-width: 640px) {
   .box2 {
@@ -272,7 +312,12 @@ p {
     align-items: center;
     align-content: center;
   }
-  
+  .background-container {
+    display: none;
+  }
+  .main-title {
+    margin-top: -50px;
+  }
 }
 
 /*ScrollMagic Cards*/
@@ -280,18 +325,6 @@ p {
 .box1 {
   font-weight: 300;
 }
-
-/* .box-content img {
-  margin: auto;
-  width: 150px;
-  height: auto;
-} */
-  /* .borde-inferior {
-    height: 2px;
-    width: 50%;
-    margin: auto;
-    background-color: #c5c0c0;
-  } */
 
 .digit {
   height: 420px;
@@ -316,28 +349,11 @@ p {
           transform: none;
 }
 
-
 .box1 h1 {
   font-size: 1.2rem;
 }
 
 /*//////////////*/
-/* 
-@media screen and (max-width: 968px) {
-  .item {
-    flex-basis: calc(50% - 5px);
-  }
-  .box-content {
-    box-shadow: none ;
-    background-color: white;
-  }
-} */
-/* 
-@media screen and (max-width: 480px) {
-  .item {
-    flex-basis: calc(100% - 10px);
-  }
-} */
 
 .home-dashboard {
   max-width: 1200px;
@@ -346,17 +362,19 @@ p {
   justify-content: center;*/
   /* background-color: #cd8170; */
   flex-basis: 50%;
-  padding: 20px;
   box-sizing: border-box;
   align-items: center;
   display: flex;
   margin: auto;
   justify-content: center;
+  padding-top: 40px;
+  background-color: white;
 }
 
 .home-dashboard img{
   max-width: 100%;
   height: auto;
+  background-color: white;
 }
 
 /*Footer*/
@@ -365,6 +383,7 @@ footer{
   margin: auto;
   text-align: center;
   margin-bottom: 10px;
+  background-color: white;
 }
 .footer-container {
   padding: 10px;
@@ -379,12 +398,13 @@ footer img {
 /*Analisis*/
 
 .container-background {
-  position: relative;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
 }
-
+.container {
+  background-color: white;
+  min-height: 810px;
+}
 .background {
   position: relative;
   width: 100%;
@@ -393,8 +413,14 @@ footer img {
   overflow: hidden;
 }
 
-
-.left-image,
+.main-content {
+  padding-top: 40px;
+}
+section h6 {
+  text-align: center;
+  margin: 20px 20px;
+}
+/* .left-image,
 .right-image {
   overflow-x: hidden;
   margin-top: 300px;
@@ -407,7 +433,6 @@ footer img {
 }
 .left-image {
   position: absolute;
-  /* left: 0; */
   background-image: url('./assets/pattern2.png');
 }
 .reveal-container {
@@ -421,19 +446,12 @@ footer img {
 }
 .right-image {
  position: absolute;
- /* right: 0; */
  background-image: url('./assets/pattern.png');
-}
+} */
 
-.main-content {
-  position: relative;
-  text-align: center; 
-  padding: 20px;
-}
-
-main section {
-  margin-bottom: 40px;
-}
+/* main section {
+  padding-bottom: 40px;
+} */
 
 
 /**/
@@ -464,7 +482,7 @@ main section {
 /*Modelo ML*/
 
 .section {
-  margin-bottom: 20px;
+  padding-bottom: 40px;
 }
 
 .section h2 {
