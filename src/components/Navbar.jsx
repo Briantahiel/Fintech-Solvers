@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useEffect } from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -27,15 +28,12 @@ function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [activeSection, setActiveSection] = React.useState("");
 
-  React.useEffect(() => {
+  useEffect(() => {
     const handleScroll = () => {
-      const sections = pages.map((page) =>
-        document.getElementById(page.toLowerCase())
-      );
       const currentPosition = window.scrollY;
 
-      for (let i = 0; i < sections.length; i++) {
-        const section = sections[i];
+      for (let i = 0; i < pages.length; i++) {
+        const section = document.getElementById(pages[i].toLowerCase());
         if (section) {
           const sectionTop = section.offsetTop;
           const sectionHeight = section.clientHeight;
@@ -57,14 +55,6 @@ function Navbar() {
     };
   }, []);
 
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
-  };
-
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
-
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
@@ -73,12 +63,20 @@ function Navbar() {
     }
   };
 
+  const handleOpenNavMenu = (event) => {
+    setAnchorElNav(event.currentTarget);
+  };
+
+  const handleCloseNavMenu = () => {
+    setAnchorElNav(null);
+  };
+
   return (
     <>
-      <AppBar position="fixed" id="navbar" style={{ boxShadow: "none" }}>
+      <AppBar position="fixed" id="navbar">
         <Container>
           <Toolbar disableGutters>
-            <Icon style={{ width: 60, height: 60 }}>
+            <Icon style={{ width: 50, height: 50 }} className="logo-container">
               <img src="./logo.png" alt="Logo de la empresa" width="100%" />
             </Icon>
             <Box
@@ -140,12 +138,13 @@ function Navbar() {
                 flexGrow: 1,
                 justifyContent: "flex-end",
                 display: { xs: "none", md: "flex" },
+                textAlign: "center",
               }}
             >
               {pages.map((page) => (
                 <Button
                   key={page}
-                  onClick={() => scrollToSection(page.toLowerCase())}
+                  onClick={(e) => scrollToSection(e.target.dataset.target)}
                   className={`btn-pages ${
                     activeSection === page.toLowerCase() ? "active" : ""
                   }`}
@@ -155,6 +154,7 @@ function Navbar() {
                     display: "block",
                     fontFamily: "Proxima Nova Semibold, Helvetica, sans-serif",
                   }}
+                  data-target={page.toLowerCase()}
                 >
                   {page}
                 </Button>

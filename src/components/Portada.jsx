@@ -1,26 +1,12 @@
 import "../App.css";
-
-import { useEffect } from "react";
-import ScrollMagic from "scrollmagic";
+import fraud from "../assets/fraud4.png";
+import github from "../assets/github.png";
+import streamlit from "../assets/streamlit.png";
 
 const Portada = () => {
-  useEffect(() => {
-    const controller = new ScrollMagic.Controller();
-
-    new ScrollMagic.Scene({
-      triggerElement: "#trigger1",
-      triggerHook: 0.9,
-      duration: "80%",
-      offset: 350,
-    })
-      .setClassToggle("#reveal1", "visible")
-      .addIndicators()
-      .addTo(controller);
-  }, []);
-
   return (
     <>
-      <div className="main-title">
+      <div className="main-container">
         <div className="spacer s2"></div>
         <div id="trigger1" className="spacer s0"></div>
         <div id="reveal1" className="box2 blue">
@@ -28,18 +14,36 @@ const Portada = () => {
             <h1 className="title">
               FINTECH
               <br />
-              <h1 className="underline">SOLVERS</h1>
+              <h1 className="subtitle">SOLVERS</h1>
             </h1>
-          </div>
-          <div className="paragraph">
             <p>
               Bienvenidos, este proyecto forma parte de la simulación de No
               Country.
             </p>
+            <div className="redes-container">
+              <a
+                href="https://github.com/No-Country/c16-91-ft-data-bi"
+                target="_blank"
+                className="social-link"
+              >
+                <img src={github} alt="github" className="social-icon" />{" "}
+                <span className="popup-text">GitHub</span>
+              </a>
+              <a
+                href="https://fintech-solver.streamlit.app/"
+                target="_blank"
+                className="social-link"
+              >
+                <img src={streamlit} alt="streamlit" className="social-icon" />{" "}
+                <span className="popup-text">Streamlit</span>
+              </a>
+            </div>
+          </div>
+          <div className="spacer s2"></div>
+          <div className="background-container">
+            <img src={fraud} alt="background" />
           </div>
         </div>
-        <div className="spacer s2"></div>
-      <div className="background-container"></div>
       </div>
     </>
   );
