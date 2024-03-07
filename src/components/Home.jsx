@@ -105,10 +105,16 @@ const Home = () => {
             <div className="box-content">
               <h1>ETL (Extract, Transform, Load):</h1>
               <p>
-                Extraer datos de diversas fuentes, transformarlos para el
-                análisis y cargarlos en una estructura adecuada es un proceso
-                garantiza la calidad de los datos y facilita la generación de
-                insights para la toma de decisiones.
+                El proceso de ETL (Extract, Transform, Load) es esencial para
+                gestionar y preparar datos en análisis y modelado de machine
+                learning. Consiste en tres etapas: extracción, transformación y
+                carga. En la extracción, se recolectan datos de diversas fuentes
+                manteniendo su integridad. Luego, en la transformación, se
+                limpian, validan y estructuran los datos según las necesidades.
+                Finalmente, en la carga, los datos transformados se almacenan de
+                forma segura y accesible. Este proceso asegura la calidad de los
+                datos, facilitando la generación de insights y la toma de
+                decisiones informadas.
               </p>
             </div>
           </div>
@@ -118,10 +124,17 @@ const Home = () => {
                 Exploración de los Datos (EDA - Exploratory Data Analysis):
               </h1>
               <p>
-                Implica investigar y comprender la naturaleza y el contenido de
-                un conjunto de datos mediante diversas técnicas estadísticas y
-                de visualización. Su objetivo es descubrir patrones, relaciones
-                y tendencias ocultas en los datos.
+                En la exploración de datos se trata de comprender la naturaleza
+                y contenido de un conjunto de datos usando técnicas estadísticas
+                y de visualización. Su objetivo es descubrir patrones,
+                relaciones y tendencias ocultas que orienten la toma de
+                decisiones. Se utilizan herramientas como histogramas, gráficos
+                de dispersión y análisis de series temporales para identificar
+                problemas en los datos, como valores atípicos o faltantes.
+                Además, ayuda a formular hipótesis y seleccionar técnicas de
+                análisis adecuadas. Es una etapa fundamental que proporciona una
+                comprensión inicial y guía el desarrollo de análisis más
+                avanzados y modelos predictivos.
               </p>
             </div>
           </div>
@@ -132,10 +145,15 @@ const Home = () => {
                 Métricas, etc.):
               </h1>
               <p>
-                En esta etapa, se utilizan herramientas y técnicas de
-                visualización de datos para representar la información de manera
-                efectiva y comprensible, facilitando la interpretación y
-                comunicación de los resultados.
+                En la etapa de visualización de datos, se utilizan diversas
+                herramientas como dashboards, KPIs, gráficos y métricas para
+                representar la información de manera clara y efectiva. Los
+                dashboards ofrecen una vista consolidada de los datos,
+                facilitando la monitorización y la toma de decisiones. Los KPIs
+                sirven para medir el progreso hacia objetivos y se presentan
+                visualmente para una mejor comprensión. Los gráficos ayudan a
+                identificar patrones y tendencias, mientras que las métricas
+                cuantifican el desempeño y evalúan el impacto de las acciones.
               </p>
             </div>
           </div>
@@ -143,11 +161,15 @@ const Home = () => {
             <div className="box-content">
               <h1>Modelo de Machine Learning:</h1>
               <p>
-                Implica desarrollar algoritmos que permiten a las máquinas
-                aprender de los datos y mejorar su rendimiento con la
-                experiencia. Esto implica procesar datos para identificar
+                En la etapa del modelo de Machine Learning, se desarrollan
+                algoritmos que permiten a las máquinas aprender de los datos y
+                mejorar su rendimiento con la experiencia acumulada. Este
+                proceso implica el procesamiento de datos para identificar
                 patrones y tomar decisiones automatizadas en base a estos
-                patrones.
+                patrones. Una vez entrenados, estos modelos son capaces de
+                realizar predicciones y clasificaciones precisas, lo que permite
+                automatizar tareas, identificar tendencias y generar insights
+                para la toma de decisiones.
               </p>
             </div>
           </div>
@@ -248,7 +270,7 @@ const Home = () => {
             </h1>
             <div className="borde-inferior"></div>
             <br />
-            <p style={{fontStyle: 'italic'}}>
+            <p style={{ fontStyle: "italic" }}>
               El conjunto de datos y el proceso de modelado permiten extraer una
               amplia gama de información valiosa para la detección de fraudes en
               transacciones financieras. A continuación, se detallan algunas
@@ -329,7 +351,7 @@ const Home = () => {
 
           <div className="section">
             <h2>Conclusiones:</h2>
-            <p style={{fontStyle: 'italic'}}>
+            <p style={{ fontStyle: "italic" }}>
               El análisis exhaustivo de la información extraída de los datos y
               las métricas generadas proporciona una visión integral del
               panorama de fraudes y permite a las instituciones financieras
@@ -350,7 +372,7 @@ const Home = () => {
             <h1 className="titles">Modelo de Machine Learning:</h1>
             <div className="borde-inferior"></div>
             <br />
-            <p style={{fontStyle: 'italic'}}>
+            <p style={{ fontStyle: "italic" }}>
               El objetivo de este modelo es identificar transacciones
               fraudulentas dentro de un conjunto de datos de transacciones
               financieras. Para lograr esto, se emplean algoritmos de machine
@@ -447,7 +469,7 @@ const Home = () => {
 
           <div className="section">
             <h2>Detección de Fraudes:</h2>
-            <p style={{fontStyle: 'italic'}}>
+            <p style={{ fontStyle: "italic" }}>
               Utilizando el modelo entrenado, se pueden identificar
               transacciones sospechosas o fraudulentas en tiempo real. El modelo
               analiza las características de cada transacción y las compara con
@@ -557,184 +579,197 @@ const Home = () => {
           </p>
           <p>
             Para una experiencia aún más completa, visita nuestro documento en{" "}
-            <a href="https://github.com/No-Country/c16-91-ft-data-bi" target="_blank">Github</a> o
-            visita nuestra página web de <a href="https://fintech-solver.streamlit.app/" target="_blank">Streamlit</a>.
+            <a
+              href="https://github.com/No-Country/c16-91-ft-data-bi"
+              target="_blank"
+            >
+              Github
+            </a>{" "}
+            o visita nuestra página web de{" "}
+            <a href="https://fintech-solver.streamlit.app/" target="_blank">
+              Streamlit
+            </a>
+            .
           </p>
           <p>¡Gracias por tu interés y apoyo!</p>
         </div>
-        <div id="integrantes" style={{paddingTop: '70px'}}>
-        <div className="footer-background">
-          <div
-            id="carouselExampleCaptions"
-            className="carousel slide integrantes"
-            data-bs-ride="carousel"
-            data-interval="false"
-            ref={carouselRef}
-          >
-            <div className="carousel-container">
-              <button
-                type="button"
-                className="active"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="0"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="3"
-                aria-label="Slide 4"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="4"
-                aria-label="Slide 5"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="5"
-                aria-label="Slide 6"
-              ></button>
-            </div>
-            <div className="carousel-inner">
-              <div className="carousel-item active">
-                <div style={{ marginBottom: "160px" }}>
-                  <img
-                    src={kevin}
-                    className="d-block w-25"
-                    alt="Kevin Castellano"
-                  />
-                </div>
-                <div className="carousel-caption d-md-block">
-                  <h6>
-                    Kevin Castellano - <span>Data Engineer</span>
-                  </h6>
-                </div>
-              </div>
-              <div className="carousel-item">
-                <div style={{ marginBottom: "160px" }}>
-                  <img src={brian} className="d-block w-25" alt="Brian Gómez" />
-                </div>
-                <div className="carousel-caption d-md-block">
-                  <h6>
-                    Brian Gómez - <span>Data Scientist</span>
-                  </h6>
-                </div>
-              </div>
-              <div className="carousel-item">
-                <div style={{ marginBottom: "160px" }}>
-                  <img
-                    src={marcos}
-                    className="d-block w-25"
-                    alt="Marcos Miño"
-                  />
-                </div>
-                <div className="carousel-caption d-md-block">
-                  <h6>
-                    Marcos Miño - <span>Data Analyst</span>
-                  </h6>
-                </div>
-              </div>
-              <div className="carousel-item">
-                <div style={{ marginBottom: "160px" }}>
-                  <img
-                    src={veronica}
-                    className="d-block w-25"
-                    alt="Verónica Moroni"
-                  />
-                </div>
-                <div className="carousel-caption d-md-block">
-                  <h6>
-                    Verónica Moroni - <span>Analyst BI</span>
-                  </h6>
-                </div>
-              </div>
-              <div className="carousel-item">
-                <div style={{ marginBottom: "160px" }}>
-                  <img
-                    src={diego}
-                    className="d-block w-25"
-                    alt="Diego Sanabria"
-                  />
-                </div>
-                <div className="carousel-caption d-md-block">
-                  <h6>
-                    Diego Sanabria - <span>Machine Learning Developer</span>
-                  </h6>
-                </div>
-              </div>
-              <div className="carousel-item">
-                <div style={{ marginBottom: "160px" }}>
-                  <img
-                    src={mayra}
-                    className="d-block w-25"
-                    alt="Mayra Sierra"
-                  />
-                </div>
-                <div className="carousel-caption d-md-block">
-                  <h6>
-                    Mayra Sierra - <span>Data Analyst</span>
-                  </h6>
-                </div>
-              </div>
-            </div>
-            <button
-              className="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide="prev"
+        <div id="integrantes" style={{ paddingTop: "70px" }}>
+          <div className="footer-background">
+            <div
+              id="carouselExampleCaptions"
+              className="carousel slide integrantes"
+              data-bs-ride="carousel"
+              data-interval="false"
+              ref={carouselRef}
             >
-              <i className="fa-solid fa-chevron-left"></i>
-            </button>
-            <button
-              className="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide="next"
-            >
-              <i className="fa-solid fa-chevron-right"></i>
-            </button>
-          </div>
+              <div className="carousel-container">
+                <button
+                  type="button"
+                  className="active"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="0"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="3"
+                  aria-label="Slide 4"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="4"
+                  aria-label="Slide 5"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="5"
+                  aria-label="Slide 6"
+                ></button>
+              </div>
+              <div className="carousel-inner">
+                <div className="carousel-item active">
+                  <div style={{ marginBottom: "160px" }}>
+                    <img
+                      src={kevin}
+                      className="d-block w-25"
+                      alt="Kevin Castellano"
+                    />
+                  </div>
+                  <div className="carousel-caption d-md-block">
+                    <h6>
+                      Kevin Castellano - <span>Data Engineer</span>
+                    </h6>
+                  </div>
+                </div>
+                <div className="carousel-item">
+                  <div style={{ marginBottom: "160px" }}>
+                    <img
+                      src={brian}
+                      className="d-block w-25"
+                      alt="Brian Gómez"
+                    />
+                  </div>
+                  <div className="carousel-caption d-md-block">
+                    <h6>
+                      Brian Gómez - <span>Data Scientist</span>
+                    </h6>
+                  </div>
+                </div>
+                <div className="carousel-item">
+                  <div style={{ marginBottom: "160px" }}>
+                    <img
+                      src={marcos}
+                      className="d-block w-25"
+                      alt="Marcos Miño"
+                    />
+                  </div>
+                  <div className="carousel-caption d-md-block">
+                    <h6>
+                      Marcos Miño - <span>Data Analyst</span>
+                    </h6>
+                  </div>
+                </div>
+                <div className="carousel-item">
+                  <div style={{ marginBottom: "160px" }}>
+                    <img
+                      src={veronica}
+                      className="d-block w-25"
+                      alt="Verónica Moroni"
+                    />
+                  </div>
+                  <div className="carousel-caption d-md-block">
+                    <h6>
+                      Verónica Moroni - <span>Analyst BI</span>
+                    </h6>
+                  </div>
+                </div>
+                <div className="carousel-item">
+                  <div style={{ marginBottom: "160px" }}>
+                    <img
+                      src={diego}
+                      className="d-block w-25"
+                      alt="Diego Sanabria"
+                    />
+                  </div>
+                  <div className="carousel-caption d-md-block">
+                    <h6>
+                      Diego Sanabria - <span>Machine Learning Developer</span>
+                    </h6>
+                  </div>
+                </div>
+                <div className="carousel-item">
+                  <div style={{ marginBottom: "160px" }}>
+                    <img
+                      src={mayra}
+                      className="d-block w-25"
+                      alt="Mayra Sierra"
+                    />
+                  </div>
+                  <div className="carousel-caption d-md-block">
+                    <h6>
+                      Mayra Sierra - <span>Data Analyst</span>
+                    </h6>
+                  </div>
+                </div>
+              </div>
+              <button
+                className="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev"
+              >
+                <i className="fa-solid fa-chevron-left"></i>
+              </button>
+              <button
+                className="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next"
+              >
+                <i className="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
 
-          <footer>
-            <div className="footer-container">
+            <footer>
+              <div className="footer-container">
+                <div>
+                  <span>No Country</span>
+                </div>
+                <div className="footer-github">
+                  <a
+                    href="https://github.com/No-Country/c16-91-ft-data-bi"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src={logo} alt="Logo de Github" />
+                  </a>
+                </div>
+                <div>
+                  <span>c16-91-data-BI</span>
+                </div>
+              </div>
               <div>
-                <span>No Country</span>
+                <span>Copyright &copy; 2024 Fintech Solvers</span>
               </div>
-              <div className="footer-github">
-                <a
-                  href="https://github.com/No-Country/c16-91-ft-data-bi"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src={logo} alt="Logo de Github" />
-                </a>
-              </div>
-              <div>
-                <span>c16-91-data-BI</span>
-              </div>
-            </div>
-            <div>
-              <span>Copyright &copy; 2024 Fintech Solvers</span>
-            </div>
-          </footer>
+            </footer>
+          </div>
         </div>
-      </div>
       </div>
     </>
   );
