@@ -150,7 +150,7 @@ function Navbar() {
                   }`}
                   sx={{
                     my: 2,
-                    color: "grey",
+                    color: "",
                     display: "block",
                     fontFamily: "Proxima Nova Semibold, Helvetica, sans-serif",
                   }}

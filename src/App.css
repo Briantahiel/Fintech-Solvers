@@ -23,7 +23,9 @@ body {
   text-align: center;
 
 }
-
+.titles {
+  margin-bottom: 20px;
+}
 .borde-inferior {
   display: inline-block;
   border-bottom: 1px solid lightgray;
@@ -38,9 +40,13 @@ body {
 }
 
 .logo-container img {
-  filter: saturate(0%) brightness(0%);
+  filter: saturate(0%);
 }
 
+.btn-pages {
+  font-weight: 700 !important;
+  color: lightslategray !important;
+}
 /* .btn-pages::after {
   content: '';
   position: absolute;
@@ -71,35 +77,34 @@ body {
 /*HOME*/
 .home-container {
   display: flex;
-  flex-wrap: wrap;
-  max-width: 1200px;
+  flex-direction: column;
+  justify-content: center;
   margin: 10px auto;
-  background-color: white;
   gap: 10px;
  }
- 
-.box1 {
-  display: flex;
-  justify-content: space-around;
+ .home-desarrollo-descripcion {
+  max-width: 1200px;
   margin: auto;
+}
+
+.box-content h1 {
+  padding: 20px;
+  margin-top: 10px;
+}
+.box-content {
+  margin: auto;
+  max-width: 1000px;
+  padding: 10px;
+  text-align: center;
   background-color: whitesmoke;
   box-shadow: 8px 12px 16px -9px rgba(0,0,0,0.75);
   -webkit-box-shadow: 8px 12px 16px -9px rgba(0,0,0,0.75);
   -moz-box-shadow: 8px 12px 16px -9px rgba(0,0,0,0.75);
 }
-.item {
-  height: 240px !important;
-  width: 100%;
-}
-.box-content {
-  max-width: 1000px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;  
-}
 .box-content p {
+  padding: 20px;
   font-style: italic;
+  text-align: left;
 }
 
 .home-content {
@@ -123,19 +128,11 @@ body {
   width: 460px;
   height: auto;
 }
-.home-desarrollo-descripcion {
-  max-width: 1200px;
-  margin: auto;
-}
-.home-desarrollo-descripcion p:nth-child(1){
-  text-align: center;
-  margin: 30px auto;
-}
+
 .home-img img {
   max-width: 100%;
   height: auto;
 }
-
 
 /*Carousel*/
 
@@ -262,7 +259,7 @@ body {
 
 
 .digit {
-  height: 420px;
+  /* height: 420px; */
   opacity: 0;
   -webkit-transform: translateX(-40px);
      -moz-transform: translateX(-40px);
@@ -324,7 +321,7 @@ footer{
   max-width: 1200px;
   margin: auto;
   text-align: center;
-  font-weight: 700;
+  font-weight: 500;
 }
 .footer-container {
   max-width: 1200px;
